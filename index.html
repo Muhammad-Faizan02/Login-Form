@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<img src="logo.png" alt="" width="400px">
+   <section class="container">
+
+        <form action="" class="form">
+            <label for="userId"><span>Email or Phone: </span></label>
+            <input type="text" id="userId" name="username" class="txt" placeholder="Email or Phone">
+
+            <label for="password"><span>Password: </span></label>
+            <input type="password" id="userpass" name="password" class="txt" placeholder="Password">
+
+           
+
+        </form>
+        <div id="lower">
+            <input type="submit" class="btn" value="Login" onclick="login()">
+        <p class="newUser">
+            Not a Member ? <a href="">Signup now</a>
+        </p>
+        </div>
+
+        
+    
+    </section>
+    
+</body>
+</html>
+
+<script>
+
+    function login(){
+        var name ="faizan@dawn.com";
+        var pass ="faizan";
+
+        var uname = document.getElementById("userId").value;
+        var upass = document.getElementById("userpass").value;
+
+        if(name == uname && upass == pass)
+        {
+            alert("Welcome Mr." + uname);
+        }
+
+        else
+        {
+            alert("Try Again Later")
+        }
+
+    }
+
+</script>
